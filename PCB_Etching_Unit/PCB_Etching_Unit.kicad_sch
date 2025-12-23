@@ -2040,6 +2040,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Potentiometer_US"
 			(pin_names
 				(offset 1.016)
@@ -6082,6 +6265,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 120.65) (xy 161.29 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dec366b-3311-41b3-bf0f-f5b6f6c2aa0e")
+	)
+	(wire
+		(pts
 			(xy 153.67 39.37) (xy 153.67 100.33)
 		)
 		(stroke
@@ -6442,7 +6635,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 97.79) (xy 196.85 146.05)
+			(xy 196.85 97.79) (xy 196.85 143.51)
 		)
 		(stroke
 			(width 0)
@@ -7282,7 +7475,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 115.57) (xy 158.75 133.35)
+			(xy 158.75 115.57) (xy 158.75 144.78)
 		)
 		(stroke
 			(width 0)
@@ -7382,7 +7575,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 147.32) (xy 198.12 107.95)
+			(xy 198.12 144.78) (xy 198.12 107.95)
 		)
 		(stroke
 			(width 0)
@@ -7402,7 +7595,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 144.78) (xy 195.58 107.95)
+			(xy 195.58 142.24) (xy 195.58 107.95)
 		)
 		(stroke
 			(width 0)
@@ -7479,6 +7672,16 @@
 			(type default)
 		)
 		(uuid "7d3c2e41-0545-41f4-a9c1-f9e325b455c5")
+	)
+	(wire
+		(pts
+			(xy 193.04 162.56) (xy 195.58 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e2fee44-5ead-408e-b4b2-036c5ed66983")
 	)
 	(wire
 		(pts
@@ -8112,6 +8315,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 120.65) (xy 161.29 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8e870c6-7a0c-4b9a-90fd-de11fd64d50b")
+	)
+	(wire
+		(pts
 			(xy 64.77 132.08) (xy 64.77 165.1)
 		)
 		(stroke
@@ -8442,16 +8655,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 132.08) (xy 168.91 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfd1ed36-a978-484c-9b79-6c4bd8042c53")
-	)
-	(wire
-		(pts
 			(xy 231.14 77.47) (xy 231.14 82.55)
 		)
 		(stroke
@@ -8462,7 +8665,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 144.78) (xy 195.58 144.78)
+			(xy 157.48 142.24) (xy 195.58 142.24)
 		)
 		(stroke
 			(width 0)
@@ -8652,16 +8855,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 132.08) (xy 168.91 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2e206f6-114c-4b2c-8ce2-30b76e94b454")
-	)
-	(wire
-		(pts
 			(xy 104.14 125.73) (xy 107.95 125.73)
 		)
 		(stroke
@@ -8719,6 +8912,16 @@
 			(type default)
 		)
 		(uuid "d965fd3f-ccd0-42c3-a399-ec234608c650")
+	)
+	(wire
+		(pts
+			(xy 161.29 162.56) (xy 177.8 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9866602-2029-49cd-9498-f950c70270d7")
 	)
 	(wire
 		(pts
@@ -8802,16 +9005,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 133.35) (xy 167.64 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddbae10a-4234-4f51-9a26-b0d3a7d38635")
-	)
-	(wire
-		(pts
 			(xy 252.73 58.42) (xy 265.43 58.42)
 		)
 		(stroke
@@ -8892,16 +9085,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 133.35) (xy 167.64 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1e7fd48-0293-4b37-b17c-fb5c8b693a17")
-	)
-	(wire
-		(pts
 			(xy 66.04 68.58) (xy 66.04 101.6)
 		)
 		(stroke
@@ -8922,7 +9105,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 138.43) (xy 166.37 144.78)
+			(xy 157.48 138.43) (xy 157.48 142.24)
 		)
 		(stroke
 			(width 0)
@@ -9062,7 +9245,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 146.05) (xy 196.85 146.05)
+			(xy 160.02 143.51) (xy 196.85 143.51)
 		)
 		(stroke
 			(width 0)
@@ -9182,7 +9365,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 138.43) (xy 166.37 138.43)
+			(xy 152.4 138.43) (xy 157.48 138.43)
 		)
 		(stroke
 			(width 0)
@@ -9192,7 +9375,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 118.11) (xy 160.02 132.08)
+			(xy 160.02 118.11) (xy 160.02 143.51)
 		)
 		(stroke
 			(width 0)
@@ -9232,7 +9415,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 147.32) (xy 198.12 147.32)
+			(xy 158.75 144.78) (xy 198.12 144.78)
 		)
 		(stroke
 			(width 0)
@@ -9498,7 +9681,7 @@
 				)
 				(uuid "e3ad074d-9385-41e9-b89d-170a3996752b")
 			)
-			(table_cell "If timer reached 0, blink LED display at 1 Hz and activate buzzer."
+			(table_cell "If timer reached 0, blink LED display at 1 Hz and activate buzzer.\nThis button stops both."
 				(exclude_from_sim no)
 				(at 233.68 146.05 0)
 				(size 50.8 5.08)
@@ -9644,6 +9827,16 @@
 			(justify left bottom)
 		)
 		(uuid "8eee8bb5-ca71-4b19-a7d7-dc1a2b31cca6")
+	)
+	(label "BUZZER-ON"
+		(at 162.56 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b9a730f-060e-4897-9898-7af8da1a8fb0")
 	)
 	(label "UP"
 		(at 137.16 138.43 0)
@@ -9805,6 +9998,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 195.58 162.56 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0247d366-3867-4f53-9680-77bea0ce5174")
+		(property "Reference" "#PWR037"
+			(at 201.93 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 162.5599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 195.58 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f3b853e-28f7-4622-801f-c0f9c1d553b2")
+		)
+		(instances
+			(project "PCB_Etching_Unit"
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:TIP41")
 		(at 267.97 48.26 0)
 		(mirror y)
@@ -9942,6 +10203,76 @@
 			(project "PCB_Etching_Unit"
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 181.61 162.56 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06bb53db-0626-4da9-b352-f19b41a767d8")
+		(property "Reference" "R40"
+			(at 182.8801 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "330R"
+			(at 180.3401 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+			(at 181.864 163.576 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 181.61 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad0f8f3e-c224-48d2-93df-10fe9b9bada6")
+		)
+		(pin "2"
+			(uuid "805f8900-2c82-42a2-b80f-47439f2fb5fe")
+		)
+		(instances
+			(project "PCB_Etching_Unit"
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -12215,6 +12546,7 @@
 	(symbol
 		(lib_id "Transistor_BJT:TIP42")
 		(at 31.75 182.88 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12222,7 +12554,7 @@
 		(dnp no)
 		(uuid "4994859a-7df5-4ffc-90a8-02e8c734d0a0")
 		(property "Reference" "Q13"
-			(at 36.83 181.6099 0)
+			(at 36.83 184.1501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12231,7 +12563,7 @@
 			)
 		)
 		(property "Value" "TIP42"
-			(at 36.83 184.1499 0)
+			(at 36.83 181.6101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12240,7 +12572,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
-			(at 38.1 184.785 0)
+			(at 38.1 180.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12883,6 +13215,7 @@
 	(symbol
 		(lib_id "Transistor_BJT:TIP42")
 		(at 29.21 83.82 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12890,7 +13223,7 @@
 		(dnp no)
 		(uuid "5b79adae-a2ee-441c-928f-5a4120116aff")
 		(property "Reference" "Q3"
-			(at 34.29 82.5499 0)
+			(at 34.29 85.0901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12899,7 +13232,7 @@
 			)
 		)
 		(property "Value" "TIP42"
-			(at 34.29 85.0899 0)
+			(at 34.29 82.5501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12908,7 +13241,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
-			(at 35.56 85.725 0)
+			(at 35.56 81.915 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13332,6 +13665,7 @@
 	(symbol
 		(lib_id "Transistor_BJT:TIP42")
 		(at 29.21 116.84 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13339,7 +13673,7 @@
 		(dnp no)
 		(uuid "65769dc2-d6d8-45db-b4c7-5511592492d4")
 		(property "Reference" "Q2"
-			(at 34.29 115.5699 0)
+			(at 34.29 118.1101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13348,7 +13682,7 @@
 			)
 		)
 		(property "Value" "TIP42"
-			(at 34.29 118.1099 0)
+			(at 34.29 115.5701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13357,7 +13691,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
-			(at 35.56 118.745 0)
+			(at 35.56 114.935 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15210,6 +15544,83 @@
 			(project "PCB_Etching_Unit"
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 189.23 162.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "985727f5-f335-490a-80b4-795a9c2939d0")
+		(property "Reference" "D9"
+			(at 190.8175 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 190.8175 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 189.23 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 189.23 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 189.23 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "889bfeec-1569-4477-bc90-d2a9f14f25b9")
+		)
+		(pin "1"
+			(uuid "2cf1a843-7520-49ba-9131-5be4ca9f9144")
+		)
+		(instances
+			(project ""
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -18653,6 +19064,7 @@
 	(symbol
 		(lib_id "Transistor_BJT:TIP42")
 		(at 29.21 149.86 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18660,7 +19072,7 @@
 		(dnp no)
 		(uuid "eda68c40-dafc-43ae-8aca-d7e2967bec2f")
 		(property "Reference" "Q1"
-			(at 34.29 148.5899 0)
+			(at 34.29 151.1301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18669,7 +19081,7 @@
 			)
 		)
 		(property "Value" "TIP42"
-			(at 34.29 151.1299 0)
+			(at 34.29 148.5901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18678,7 +19090,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown"
-			(at 35.56 151.765 0)
+			(at 35.56 147.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
