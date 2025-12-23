@@ -4230,7 +4230,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:BC550"
+		(symbol "Transistor_BJT:BC558"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -4247,7 +4247,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC550"
+			(property "Value" "BC558"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -4267,7 +4267,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4277,7 +4277,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
+			(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4286,7 +4286,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "NPN Transistor"
+			(property "ki_keywords" "PNP Transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4304,7 +4304,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BC550_0_1"
+			(symbol "BC558_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -4329,19 +4329,6 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BC550_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -4366,9 +4353,20 @@
 						(type none)
 					)
 				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -4378,6 +4376,8 @@
 						(type outline)
 					)
 				)
+			)
+			(symbol "BC558_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -11417,6 +11417,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC558")
+		(at 91.44 144.78 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2dc037d6-dbb7-4a64-9926-eccfc9e35c96")
+		(property "Reference" "Q18"
+			(at 86.36 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC558"
+			(at 86.36 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 86.36 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 91.44 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
+			(at 91.44 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00b02817-3539-4db1-a3d2-32b350f96913")
+		)
+		(pin "2"
+			(uuid "ce905327-e2f4-4498-be5a-88b9f677a9bf")
+		)
+		(pin "3"
+			(uuid "422c5dcd-02e4-4e92-b6dc-955d2dfdf7f6")
+		)
+		(instances
+			(project "PCB_Etching_Unit"
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "Q18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "4xxx:4011")
 		(at 48.26 27.94 180)
 		(unit 4)
@@ -11726,83 +11803,6 @@
 			(project "PCB_Etching_Unit"
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC550")
-		(at 91.44 144.78 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "329eb7ca-63b0-49df-abe2-01ad44b460eb")
-		(property "Reference" "Q18"
-			(at 86.36 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC550"
-			(at 86.36 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 146.685 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 91.44 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 91.44 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "2a31001f-77f1-4bcf-9c41-80f50a8d5176")
-		)
-		(pin "2"
-			(uuid "825d04e0-efda-4da5-94fe-dac18bce1e1c")
-		)
-		(pin "1"
-			(uuid "f42b66a7-67af-4f48-89da-e6a5430fc142")
-		)
-		(instances
-			(project "PCB_Etching_Unit"
-				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
-					(reference "Q18")
 					(unit 1)
 				)
 			)
@@ -12607,83 +12607,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC550")
-		(at 91.44 67.31 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f089699-82c4-4de2-a9da-f2acba5d47a8")
-		(property "Reference" "Q14"
-			(at 86.36 66.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC550"
-			(at 86.36 68.5799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 69.215 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 91.44 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 91.44 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "03325fd3-ffaa-4054-a3e7-d28a60e239ec")
-		)
-		(pin "2"
-			(uuid "f565a9f7-41c9-4247-b09c-073f48a35b2e")
-		)
-		(pin "1"
-			(uuid "8b697a03-c217-4e9a-8a95-c131a37e4cab")
-		)
-		(instances
-			(project ""
-				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
-					(reference "Q14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 179.07 59.69 0)
 		(unit 1)
@@ -12744,83 +12667,6 @@
 			(project ""
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC550")
-		(at 91.44 182.88 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "555ad83c-95e8-44cb-8121-ae926513c9fd")
-		(property "Reference" "Q20"
-			(at 86.36 181.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC550"
-			(at 86.36 184.1499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 184.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 91.44 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 91.44 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ff46a25a-8549-4cef-bd2f-26bc7cdbdf61")
-		)
-		(pin "2"
-			(uuid "d72843c5-8421-41b3-a34b-9adc2f652b58")
-		)
-		(pin "1"
-			(uuid "4c5bd6e8-2e1c-46cd-ad6a-e148d7dd5c4e")
-		)
-		(instances
-			(project "PCB_Etching_Unit"
-				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
-					(reference "Q20")
 					(unit 1)
 				)
 			)
@@ -12888,6 +12734,83 @@
 			(project "PCB_Etching_Unit"
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC558")
+		(at 91.44 182.88 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57b98939-540d-408e-8ab5-0942069410b8")
+		(property "Reference" "Q20"
+			(at 86.36 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC558"
+			(at 86.36 184.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 86.36 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 91.44 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
+			(at 91.44 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb9a77b5-bb04-413a-aa8f-a265ac20b82d")
+		)
+		(pin "2"
+			(uuid "bf552de2-611d-4948-ab51-4847eaf8457a")
+		)
+		(pin "3"
+			(uuid "f1ae2742-4809-4eb8-9eba-17d7038ca92a")
+		)
+		(instances
+			(project "PCB_Etching_Unit"
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "Q20")
 					(unit 1)
 				)
 			)
@@ -13339,83 +13262,6 @@
 			(project "PCB_Etching_Unit"
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC550")
-		(at 91.44 87.63 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6225c68b-505d-4a35-8f9a-884313f2ecdc")
-		(property "Reference" "Q15"
-			(at 86.36 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC550"
-			(at 86.36 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 91.44 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 91.44 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "3dcaa1cb-1c08-4311-8bc8-d9198f2a2f96")
-		)
-		(pin "2"
-			(uuid "20e8f0e5-69bb-479b-aab3-c4a9cbba1f09")
-		)
-		(pin "1"
-			(uuid "cc244002-6077-41c6-86c5-69c5b237c27e")
-		)
-		(instances
-			(project "PCB_Etching_Unit"
-				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
-					(reference "Q15")
 					(unit 1)
 				)
 			)
@@ -14576,6 +14422,83 @@
 			(project "PCB_Etching_Unit"
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC558")
+		(at 91.44 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "819373c0-5d9a-4294-8d16-694d1bb808e2")
+		(property "Reference" "Q14"
+			(at 86.36 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC558"
+			(at 86.36 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 86.36 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 91.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
+			(at 91.44 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84fce391-6210-4ec7-a70c-0ed0441cbc11")
+		)
+		(pin "2"
+			(uuid "568fae14-fe41-47d6-b0de-9c580ecaa1b0")
+		)
+		(pin "3"
+			(uuid "132bea3f-11c6-4bff-8b9f-a531bb51def3")
+		)
+		(instances
+			(project ""
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "Q14")
 					(unit 1)
 				)
 			)
@@ -16022,6 +15945,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC558")
+		(at 91.44 87.63 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8b37d05-a18a-4ca7-beec-37b0d52c914b")
+		(property "Reference" "Q15"
+			(at 86.36 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC558"
+			(at 86.36 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 86.36 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 91.44 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
+			(at 91.44 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9daf80f4-64a6-45ea-94ea-2acb9282b3d3")
+		)
+		(pin "2"
+			(uuid "f3a7384f-8eba-49f2-9070-8fb925c7aab0")
+		)
+		(pin "3"
+			(uuid "2df0e447-7308-4052-972c-917317b581b0")
+		)
+		(instances
+			(project "PCB_Etching_Unit"
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "Q15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 31.75 88.9 0)
 		(unit 1)
@@ -16564,83 +16564,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC550")
-		(at 91.44 163.83 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b781041c-faee-48ac-858e-a0d4606f36ac")
-		(property "Reference" "Q19"
-			(at 86.36 162.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC550"
-			(at 86.36 165.0999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 91.44 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 91.44 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "c902d58f-39a2-42c6-913f-facdc94d4f2c")
-		)
-		(pin "2"
-			(uuid "e6bbff38-66e5-4b00-a329-5f6e3cc7a4c6")
-		)
-		(pin "1"
-			(uuid "8e2483bb-5a26-456a-a6d9-b42e233c960d")
-		)
-		(instances
-			(project "PCB_Etching_Unit"
-				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
-					(reference "Q19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 276.86 69.85 0)
 		(unit 1)
@@ -16702,83 +16625,6 @@
 			(project "PCB_Etching_Unit"
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC550")
-		(at 91.44 106.68 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb3e648f-0653-499c-8f09-3744a42e3aaf")
-		(property "Reference" "Q16"
-			(at 86.36 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC550"
-			(at 86.36 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 108.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 91.44 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 91.44 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "3df6cca4-4381-4ee3-941d-a25c104b02a9")
-		)
-		(pin "2"
-			(uuid "6be9481e-7e7f-4db6-907b-882af684d33f")
-		)
-		(pin "1"
-			(uuid "e2728855-36f1-4019-8599-94399b126e8c")
-		)
-		(instances
-			(project "PCB_Etching_Unit"
-				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
-					(reference "Q16")
 					(unit 1)
 				)
 			)
@@ -16860,10 +16706,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bf6c465f-b564-4738-b34d-e693fa4369ee")
 		(property "Reference" "U11"
-			(at 139.8055 86.36 90)
+			(at 138.43 84.9845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16871,7 +16716,7 @@
 			)
 		)
 		(property "Value" "4511"
-			(at 137.2655 86.36 90)
+			(at 138.43 87.5245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17742,6 +17587,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC558")
+		(at 91.44 163.83 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cef59c43-1e4d-4fae-85d1-395e44d1ac73")
+		(property "Reference" "Q19"
+			(at 86.36 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC558"
+			(at 86.36 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 86.36 165.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 91.44 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
+			(at 91.44 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf2ac9eb-f764-4eea-af40-548d8f365dd9")
+		)
+		(pin "2"
+			(uuid "5ecd6c8a-b7e2-4171-87c4-0e0a02f75679")
+		)
+		(pin "3"
+			(uuid "fac8c943-8041-404d-a3fc-46892eba22c6")
+		)
+		(instances
+			(project "PCB_Etching_Unit"
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "Q19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Display_Character:HDSP-7801")
 		(at 48.26 101.6 0)
 		(mirror y)
@@ -18484,83 +18406,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC550")
-		(at 91.44 125.73 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e71bd31b-0351-45f1-9b5f-e75b40c6fc74")
-		(property "Reference" "Q17"
-			(at 86.36 124.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC550"
-			(at 86.36 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 127.635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 91.44 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 91.44 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "63d770e1-5f4f-4b4a-bd0e-fbf2374f9eaf")
-		)
-		(pin "2"
-			(uuid "d55a0952-4dd7-4540-aafd-b5878dec7020")
-		)
-		(pin "1"
-			(uuid "151ef667-ddec-47b5-b705-45dcde98b137")
-		)
-		(instances
-			(project "PCB_Etching_Unit"
-				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
-					(reference "Q17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "4xxx:4027")
 		(at 99.06 25.4 0)
 		(mirror y)
@@ -18968,6 +18813,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC558")
+		(at 91.44 125.73 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0fc0846-edc0-4bb7-b66f-6a9f2b756ca5")
+		(property "Reference" "Q17"
+			(at 86.36 124.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC558"
+			(at 86.36 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 86.36 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 91.44 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
+			(at 91.44 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5727aa7a-18ae-415d-8be5-925628ce001a")
+		)
+		(pin "2"
+			(uuid "18028edf-8959-40ea-9000-b0cb5259dea1")
+		)
+		(pin "3"
+			(uuid "f1e9da97-2a0d-4dd3-b746-a508fb329c83")
+		)
+		(instances
+			(project "PCB_Etching_Unit"
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "Q17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "4xxx:4027")
 		(at 30.48 25.4 0)
 		(mirror y)
@@ -19075,6 +18997,83 @@
 			(project ""
 				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC558")
+		(at 91.44 106.68 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f358e650-943a-4411-beaf-dc7d456ab50b")
+		(property "Reference" "Q16"
+			(at 86.36 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC558"
+			(at 86.36 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 86.36 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 91.44 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
+			(at 91.44 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86e91bb0-6466-4c09-83b9-f437fa5e48d9")
+		)
+		(pin "2"
+			(uuid "ca3d876b-7ba1-4588-a50e-39cee3a5734f")
+		)
+		(pin "3"
+			(uuid "98589b99-7d9e-447e-9fba-d22773c6de68")
+		)
+		(instances
+			(project "PCB_Etching_Unit"
+				(path "/e76c756e-d23e-4d00-aaac-11ebc96670db"
+					(reference "Q16")
 					(unit 1)
 				)
 			)
