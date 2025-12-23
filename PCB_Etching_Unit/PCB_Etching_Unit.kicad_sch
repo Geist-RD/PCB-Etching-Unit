@@ -7852,7 +7852,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 104.14) (xy 157.48 102.87)
+			(xy 156.21 104.14) (xy 156.21 102.87)
 		)
 		(stroke
 			(width 0)
@@ -8572,7 +8572,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 102.87) (xy 163.83 102.87)
+			(xy 156.21 102.87) (xy 163.83 102.87)
 		)
 		(stroke
 			(width 0)
@@ -9202,7 +9202,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 104.14) (xy 157.48 104.14)
+			(xy 152.4 104.14) (xy 156.21 104.14)
 		)
 		(stroke
 			(width 0)
@@ -11418,17 +11418,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC558")
-		(at 91.44 144.78 0)
-		(mirror y)
+		(at 91.44 144.78 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2dc037d6-dbb7-4a64-9926-eccfc9e35c96")
 		(property "Reference" "Q18"
-			(at 86.36 143.5099 0)
+			(at 86.36 146.0501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11437,7 +11435,7 @@
 			)
 		)
 		(property "Value" "BC558"
-			(at 86.36 146.0499 0)
+			(at 86.36 143.5101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11446,7 +11444,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 146.685 0)
+			(at 86.36 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12741,17 +12739,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC558")
-		(at 91.44 182.88 0)
-		(mirror y)
+		(at 91.44 182.88 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "57b98939-540d-408e-8ab5-0942069410b8")
 		(property "Reference" "Q20"
-			(at 86.36 181.6099 0)
+			(at 86.36 184.1501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12760,7 +12756,7 @@
 			)
 		)
 		(property "Value" "BC558"
-			(at 86.36 184.1499 0)
+			(at 86.36 181.6101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12769,7 +12765,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 184.785 0)
+			(at 86.36 180.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14429,17 +14425,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC558")
-		(at 91.44 67.31 0)
-		(mirror y)
+		(at 91.44 67.31 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "819373c0-5d9a-4294-8d16-694d1bb808e2")
 		(property "Reference" "Q14"
-			(at 86.36 66.0399 0)
+			(at 86.36 68.5801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14448,7 +14442,7 @@
 			)
 		)
 		(property "Value" "BC558"
-			(at 86.36 68.5799 0)
+			(at 86.36 66.0401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14457,7 +14451,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 69.215 0)
+			(at 86.36 65.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15946,17 +15940,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC558")
-		(at 91.44 87.63 0)
-		(mirror y)
+		(at 91.44 87.63 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a8b37d05-a18a-4ca7-beec-37b0d52c914b")
 		(property "Reference" "Q15"
-			(at 86.36 86.3599 0)
+			(at 86.36 88.9001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15965,7 +15957,7 @@
 			)
 		)
 		(property "Value" "BC558"
-			(at 86.36 88.8999 0)
+			(at 86.36 86.3601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15974,7 +15966,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 89.535 0)
+			(at 86.36 85.725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17588,17 +17580,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC558")
-		(at 91.44 163.83 0)
-		(mirror y)
+		(at 91.44 163.83 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cef59c43-1e4d-4fae-85d1-395e44d1ac73")
 		(property "Reference" "Q19"
-			(at 86.36 162.5599 0)
+			(at 86.36 165.1001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17607,7 +17597,7 @@
 			)
 		)
 		(property "Value" "BC558"
-			(at 86.36 165.0999 0)
+			(at 86.36 162.5601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17616,7 +17606,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 165.735 0)
+			(at 86.36 161.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18814,17 +18804,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC558")
-		(at 91.44 125.73 0)
-		(mirror y)
+		(at 91.44 125.73 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f0fc0846-edc0-4bb7-b66f-6a9f2b756ca5")
 		(property "Reference" "Q17"
-			(at 86.36 124.4599 0)
+			(at 86.36 127.0001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18833,7 +18821,7 @@
 			)
 		)
 		(property "Value" "BC558"
-			(at 86.36 126.9999 0)
+			(at 86.36 124.4601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18842,7 +18830,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 127.635 0)
+			(at 86.36 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19004,17 +18992,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC558")
-		(at 91.44 106.68 0)
-		(mirror y)
+		(at 91.44 106.68 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f358e650-943a-4411-beaf-dc7d456ab50b")
 		(property "Reference" "Q16"
-			(at 86.36 105.4099 0)
+			(at 86.36 107.9501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19023,7 +19009,7 @@
 			)
 		)
 		(property "Value" "BC558"
-			(at 86.36 107.9499 0)
+			(at 86.36 105.4101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19032,7 +19018,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 86.36 108.585 0)
+			(at 86.36 104.775 0)
 			(effects
 				(font
 					(size 1.27 1.27)
