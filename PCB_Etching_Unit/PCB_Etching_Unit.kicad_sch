@@ -9362,7 +9362,7 @@
 				)
 				(uuid "383922f5-e5fa-4467-9882-57cb23e00381")
 			)
-			(table_cell "Increase timer duration\nIf pushed down for longer than 1 seconds, increase at 10 Hz frequency"
+			(table_cell "Increase timer duration.\nIf pushed down for longer than 1 seconds, increase at 10 Hz frequency."
 				(exclude_from_sim no)
 				(at 233.68 121.92 0)
 				(size 50.8 7.62)
@@ -9396,7 +9396,7 @@
 				)
 				(uuid "e5ca24c4-1103-4cc2-8256-5fc3eec06aba")
 			)
-			(table_cell "Decrease timer duration\nIf pushed down for longer than 1 seconds, decrease at 10 Hz frequency"
+			(table_cell "Decrease timer duration.\nIf pushed down for longer than 1 seconds, decrease at 10 Hz frequency."
 				(exclude_from_sim no)
 				(at 233.68 129.54 0)
 				(size 50.8 7.62)
@@ -9413,7 +9413,7 @@
 				)
 				(uuid "b50a7ee7-597b-473a-b763-eefca0b4b6d5")
 			)
-			(table_cell "START-SAVE"
+			(table_cell "START"
 				(exclude_from_sim no)
 				(at 205.74 137.16 0)
 				(size 27.94 5.08)
@@ -9430,7 +9430,7 @@
 				)
 				(uuid "6e80cdaa-4ab0-44e4-953a-1aafdf710510")
 			)
-			(table_cell "Start timer and activate necessary motors, heating, etc."
+			(table_cell "Start timer and activate necessary motors."
 				(exclude_from_sim no)
 				(at 233.68 137.16 0)
 				(size 50.8 5.08)
@@ -9532,7 +9532,7 @@
 				)
 				(uuid "a4cf3e7c-0a51-4969-b4c0-baa9752ed6b5")
 			)
-			(table_cell "If necessary, disable buzzer"
+			(table_cell "If necessary, disable buzzer."
 				(exclude_from_sim no)
 				(at 233.68 151.13 0)
 				(size 50.8 3.81)
@@ -9566,7 +9566,7 @@
 				)
 				(uuid "34e7b956-8d45-4962-bc76-02dad92553c9")
 			)
-			(table_cell "Activate manual mode\nTurns off display and activates motors while timer and LED-display are deactivated"
+			(table_cell "Activate manual mode.\nTurns off display, timer and activates motors."
 				(exclude_from_sim no)
 				(at 233.68 154.94 0)
 				(size 50.8 10.16)
