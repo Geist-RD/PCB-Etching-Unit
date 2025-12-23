@@ -19,11 +19,11 @@ BEU aims to achieve the following goals
 - [x] timer
 - [x] speed control
 
-Used my dormant Arduino Uno board for revision 0. The many I/O pins made the hardware easy to design.\n
-Following revisions might use a PIC, the instruction set seems compact enough for some assembly and I found several primers covering them.\n
-Though the AVR software will be done in C for now.\n
-Since I'm using a plastic container, I skipped on heating the FeCl<sub>3</sub> this time. Aluminium seems to be easy to solder/weld, might be used for later revisions.\n
-Closed loop temperature controll could be done using a PT100 or Typ K element, if the casing survives extended exposure to FeCl<sub>3</sub>.\n
+Used my dormant Arduino Uno board for revision 0. The many I/O pins made the hardware easy to design.\
+Following revisions might use a PIC, the instruction set seems compact enough for some assembly and I found several primers covering them.\
+Though the AVR software will be done in C for now.\
+Since I'm using a plastic container, I skipped on heating the FeCl<sub>3</sub> this time. Aluminium seems to be easy to solder/weld, might be used for later revisions.\
+Closed loop temperature controll could be done using a PT100 or Typ K element, if the casing survives extended exposure to FeCl<sub>3</sub>.\
 
-The board just etches on one side, with the other one facing down. A support beam could hold it up, but the support itself would cover parts of the board too.\n
+The board just etches on one side, with the other one facing down. A support beam could hold it up, but the support itself would cover parts of the board too.\
 Vertical support on the left and right with 1 mm width could work.
