@@ -20,7 +20,7 @@ BEU aims to achieve the following goals
 - [x] speed control
 
 Used my dormant Arduino Uno board for revision 0. A dev board for 20€ is fine for revision 0 but it did screw over the goal of low material cost.
-Following revisions might use a PIC, the instruction set seems compact enough for some assembly and I found several primers covering them.\
+Following revisions might use a PIC, the instruction set seems compact enough for some assembly and I found several primers covering them (IDE: PIKDEV).\
 Though the AVR software will be done in C for now.\
 Since I'm using a plastic container, I skipped on heating the FeCl<sub>3</sub> this time. Aluminium seems to be easy to solder/weld, might be used for later revisions.\
 Closed loop temperature controll could be done using a PT100 or Typ K element, if the casing survives extended exposure to FeCl<sub>3</sub>.\
