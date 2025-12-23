@@ -1,0 +1,1 @@
+/usr/bin/avr-gcc -g CMakeFiles/hello.dir/main.c.obj -o hello 
